@@ -70,7 +70,24 @@ mark {
 small {
   font-size: 80%;
 }
-sub,
+small a{
+  font-weight: bold;
+  padding: 5px;
+  border-radius:2%;
+  font-family: Tahoma ;
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  transition:.5s;
+}
+small a:hover{
+  text-decoration: none;
+  background: #337ab7;
+  color: #fff;
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  transition:.5s;
+}
+sub
 sup {
   position: relative;
   font-size: 75%;
@@ -1214,7 +1231,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #777;
+  color: #4d4d4d;
 }
 h1,
 .h1,
@@ -1237,7 +1254,7 @@ h2 .small,
 .h2 .small,
 h3 .small,
 .h3 .small {
-  font-size: 65%;
+  font-size: 80%;
 }
 h4,
 .h4,
@@ -4166,12 +4183,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 3px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
   .navbar {
     border-radius: 4px;
+    margin-bottom: 3px;
   }
 }
 @media (min-width: 768px) {
@@ -4275,7 +4293,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4493,11 +4511,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-color: rgba(121, 119, 119, 0.41);
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #747474;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4508,12 +4527,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #646464;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: red;
   background-color: transparent;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -4535,7 +4560,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #ddd;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888;
+  background-color: #FFF;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -5003,7 +5028,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #000;
+  background-color: rgba(255, 255, 255, 0.70);
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;

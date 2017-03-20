@@ -6,17 +6,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Venta de instrumentos musicales y accesorios, Audio e iluminacion.">
+    <meta name="author" content="Diego Beirac">
 
     <title>Contacto - Music city</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -47,7 +48,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">La música más cerca tuyo.</a>
+                <a class="navbar-brand" href="index.html">La música más cerca tuyo</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -77,27 +78,34 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Ubicación
-                        <strong>City bell</strong>
+                    <h2 class="intro-text text-center">Nuestra
+                        <strong>Ubicación</strong>
                     </h2>
                     <hr>
-                </div>
-                <div class="col-md-8">
-                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-                    <div style="width: 100%"><iframe width="100%" height="600" src="http://www.mapsdirections.info/crear-un-mapa-de-google/map.php?width=100%&height=600&hl=en&coord=-34.86956176345365,-58.047752743655394&q=471%20Y%2014A%20N%C2%B0%201896%20%7C%20City%20bell+(Music%20City)&ie=UTF8&t=&z=16&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/crear-un-mapa-de-google/">Crear Mapa Google</a> by <a href="http://www.mapsdirections.info/">Mapa España</a></iframe></div><br />
-                </div>
-                <div class="col-md-4">
-                    <p>Phone:
-                        <strong>(221) 639-5506</strong>
+                    <div class="col-md-6 col-md-offset-4">
+                    <p>Teléfono:
+                        (221) 639-5506
                     </p>
                     <p>Email:
-                        <strong><a href="mailto:name@example.com">musiccity@hotmail.com</a></strong>
+                        <strong><a href="mailto:name@example.com">musiccity@live.com.ar</a></strong>
                     </p>
-                    <p>Address:
-                        <strong>471 Y 14A N° 1896
-                            <br>City bell, La Plata 1896</strong>
+                    <p>Visitanos:
+                        471 Y 14a (ex 4 esquina 12)
+                        City Bell, La Plata.
+                    </p>
+                    <p>Horarios: <br>
+                        Lunes a Sábados <br>
+                         <strong>9:30  a 13:30 y
+                         16:30 a 20:30.</strong>
                     </p>
                 </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.4929859490912!2d-58.04988868480034!3d-34.86896498039164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2de7cafff7e4d%3A0x888d0bbaf001ea67!2sM%C3%BAsic+City!5e0!3m2!1ses!2sar!4v1489855406170" width="700" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 </div>
+                </div>
+                
                 <div class="clearfix"></div>
             </div>
         </div>
@@ -106,33 +114,37 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Contact
-                        <strong>form</strong>
+                    <h2 class="intro-text text-center">Envianos
+                        <strong>tu consulta!</strong>
                     </h2>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio deleniti consequuntur eos voluptatem.</p>
-                    <form role="form">
+                    
+                    <form action="enviar.php" method="POST" role="form">
                         <div class="row">
                             <div class="form-group col-lg-4">
-                                <label>Name</label>
-                                <input type="text" class="form-control">
+                                <label>Nombre</label>
+                                <input type="text" name="nombre" placeholder="Nombre" class="form-control">
                             </div>
                             <div class="form-group col-lg-4">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control">
+                                <label>E-mail</label>
+                                <input type="email" name="email" placeholder="Email" class="form-control">
                             </div>
                             <div class="form-group col-lg-4">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control">
+                                <label>Numero de telefono</label>
+                                <input type="text" name="telefono" placeholder="telefono" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4 col-lg-offset-4">
+                            <label>Asunto</label>
+                                <input type="text" name="asunto" placeholder="Asunto" class="form-control">
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
-                                <label>Message</label>
-                                <textarea class="form-control" rows="6"></textarea>
+                                <label>Mensaje</label>
+                                <textarea class="form-control" name="mensaje" rows="6"></textarea>
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Submit</button>
+                                <button type="submit" value="Enviar" class="btn btn-default">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -147,7 +159,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; 2017 - Musiccity.com</p>
                 </div>
             </div>
         </div>
@@ -158,6 +170,24 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- google maps-->
+    <script>
+      function initMap() {
+        var uluru = {lat: -34.8686639, lng: -58.0471412};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4q_Szr2Gu9wlX-s0N834IpEP6bHrpmhA&callback=initMap">
+    </script>
 
 </body>
 
