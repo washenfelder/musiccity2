@@ -36,7 +36,12 @@ hr {
     border-color: #999999;
 }
 
-.brand,
+@font-face {
+    font-family: "Cracked Narrow";
+    src: url("../fonts/Cracked-Narrow.ttf");
+}
+
+.brand, 
 .address-bar {
     display: none;
 }
@@ -69,6 +74,7 @@ hr {
 }
 
 .brand-name {
+    display: none;
     margin: 0;
     font-size: 4em;
 }
@@ -142,9 +148,9 @@ footer p a {
         padding: 5px 0 10px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Cracked Narrow","Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 5em;
-        font-weight: 700;
+        font-weight: normal;
         line-height: normal;
         color: #fff;
     }
