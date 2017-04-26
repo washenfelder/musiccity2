@@ -104,27 +104,29 @@ hr {
     margin: 0 auto 0;
     border: #999999 solid 1px;
 }
-
 .img-left {
     float: none;
     margin: 0 auto 0;
 }
-
 footer {
     background: #fff;
     background: rgba(255,255,255,0.7);
 }
-
 footer p {
     margin: 0;
     padding: 2px 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 footer p a {
     text-decoration: none;
     color: #000;
+    transition: 1s;
 }
-
+footer p a:hover {
+    transition: 1s;
+    text-decoration: none;
+    color: grey;
+}
 .google-maps {
         position: relative;
         padding-bottom: 75%; // This is the aspect ratio
