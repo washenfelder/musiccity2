@@ -4515,7 +4515,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-color: rgba(121, 119, 119, 0.41);
 }
 .navbar-default .navbar-brand {
-  color: #747474;
+  color: #FF0000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-default .navbar-brand:hover,

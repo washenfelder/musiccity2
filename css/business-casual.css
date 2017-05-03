@@ -140,6 +140,8 @@ footer p a:hover {
         width: 100% !important;
         height: 100% !important;
     }
+
+
 /*  MEDIA QUERIE   */
 
 
@@ -154,7 +156,7 @@ footer p a:hover {
         font-size: 5em;
         font-weight: normal;
         line-height: normal;
-        color: #fff;
+        color: #FF0000;
     }
 
     .top-divider {

@@ -1,5 +1,5 @@
 <?php
-
+if(isset($_POST['submit'])){
   $nombre = $_POST['nombre'];
   $telefono = $_POST['telefono'];
   $mail = $_POST['email'];
@@ -10,7 +10,7 @@
   $cuerpo .= 'Email: ' . $mail . '<br>';
   $cuerpo .= 'Mensaje: ' . $mensaje . '<br>';
 
-  $destino = 'musiccity@live.com.ar';
+  $destino = 'diegobasspower@hotmail.com';
   $asunto = $asuntoUsuario;
 
   $encabezados = 'MIME-Version: 1.0' . "\r\n";
@@ -19,5 +19,5 @@
 
   mail( $destino, $asunto, $cuerpo, $encabezados );
   header("Location: contact.html"); 
-
+}
 ?>
