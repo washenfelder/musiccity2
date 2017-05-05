@@ -22,7 +22,7 @@
 	.navbar-default {
     border: none;
     background: #fff;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.7);
 	}
 	
 
@@ -36,4 +36,69 @@
 
 
 
+}
+
+
+form {
+    margin:0 auto;
+    width:459px;
+}
+label {
+    display:block;
+    text-transform: uppercase;
+    margin-top:20px;
+    letter-spacing:2px;
+    font-size: 18px;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+
+
+input, textarea {
+    width:439px;
+    height:37px;
+    background:#ffffff;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+input:focus, textarea:focus {
+    border:1px solid #89E0E5;
+}
+#submit {
+	border: none;
+	 background: #3a7999;
+	 color: #f2f2f2;
+	 padding: 10px;
+	 font-size: 16px;
+	 border-radius: 5px;
+	 position: relative;
+ 	box-sizing: border-box;
+ 	transition: all 500ms ease;
+}
+#submit:before {
+ content:'';
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 0px;
+ height: 42px;
+ background: rgba(255,255,255,0.3);
+ border-radius: 5px;
+ transition: all 2s ease;
+}
+#submit:hover:before {
+ width: 100%;
+}
+
+
+textarea {
+	height:213px;
+	
 }
