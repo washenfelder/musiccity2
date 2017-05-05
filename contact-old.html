@@ -17,7 +17,6 @@
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -111,10 +110,7 @@
             </div>
         </div>
 
-        <!-- contact form-->
-
-
-        <div class="row">
+        <!--div class="row">
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
@@ -123,37 +119,40 @@
                     </h2>
                     <hr>
                     
-                    <form action="enviar.php" method="POST">
-
-                        <label>Nombre</label>
-                        <input name="name" placeholder="Ingresa tu nombre..." required>
-
-                        <label>Email</label>
-                        <input name="email" type="email" placeholder="Ingresa tu Email..." required>
-
-                        <label>Teléfono (Opcional)</label>
-                        <input name="telefono" type="tel" placeholder="Ingresa tu telefono..." >
-
-                        <label>Consulta</label>
-                        <input name="asunto" type="text" placeholder="asunto de tu consulta..." required>
-
-                        <label>MENSAJE</label>
-                        <textarea name="message" placeholder="Escribi tu mensaje..." required></textarea>
-
-                        
-                        <input id="submit" name="submit" type="submit" value="Enviar">
-
-
+                    <form action="enviar.php" method="post" role="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label>Nombre</label>
+                                <input type="text" name="nombre" placeholder="Nombre" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>E-mail</label>
+                                <input type="email" name="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Numero de telefono</label>
+                                <input type="text" name="telefono" placeholder="telefono" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4 col-lg-offset-4">
+                            <label>Asunto</label>
+                                <input type="text" name="asunto" placeholder="Asunto" class="form-control">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group col-lg-12">
+                                <label>Mensaje</label>
+                                <textarea class="form-control" name="mensaje" rows="6"></textarea>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="hidden" name="save" value="contact">
+                                <button type="submit" value="Enviar" class="btn btn-default">Enviar</button>
+                            </div>
+                        </div>
                     </form>
-                    
                 </div>
             </div>
         </div-->
 
     </div>
-    </div>
-    </div>
-
     <!-- /.container -->
 
     <footer>

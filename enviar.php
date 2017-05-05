@@ -1,12 +1,14 @@
 <?php
-    $destino="diegobasspower@hotmail.com";
+    $destino="musiccity@live.com.ar";
     $nombre=$_POST["name"];
     $email=$_POST["email"];
+    $telefono=$_POST["telefono"];
     $asunto=$_POST["asunto"];
     $mensaje=$_POST["message"];
-    $contenido="Nombre: " . $nombre . "/nEmail: " . $email . "/nAsunto: " .$asunto ."/nMensaje: " . $message;
 
-    mail($destino,"Contacto",$contenido);
+    $contenido="Mensaje de: " . $nombre . "\nEmail: " . $email . "\nTelefono: " . $telefono ."\nAsunto: " . $asunto . "\nMensaje. " . $mensaje;
+    
+    mail($destino,"Consulta Web Musiccity",$contenido);
     header("Location: index.html");
 ?>
 
